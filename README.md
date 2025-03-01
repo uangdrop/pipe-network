@@ -48,6 +48,11 @@ curl -O https://raw.githubusercontent.com/uangdrop/pipe-network/refs/heads/main/
 
 ### Now Your NODE has been Installed and you can Close your Mobaxterm
 
+
+
+
+
+
 ## Check your Node Status
 ![image](https://github.com/user-attachments/assets/b0e11769-8f1d-4944-927d-a0f3efc25b37)
 ```sh
@@ -58,4 +63,8 @@ screen -r pipega
 
 ### Detach
 CTRL A+D
+
+## You can also check your node via the pipe network web
+- https://dashboard.pipenetwork.com/node-lookup
+- ![image](https://github.com/user-attachments/assets/0bcc5750-e93c-4051-ad0c-d6d7e2bef0a9)
 
