@@ -4,38 +4,26 @@ printf "\n"
 cat <<EOF
 
 
-░██████╗░░█████╗░  ░█████╗░██████╗░██╗░░░██╗██████╗░████████╗░█████╗░
-██╔════╝░██╔══██╗  ██╔══██╗██╔══██╗╚██╗░██╔╝██╔══██╗╚══██╔══╝██╔══██╗
-██║░░██╗░███████║  ██║░░╚═╝██████╔╝░╚████╔╝░██████╔╝░░░██║░░░██║░░██║
-██║░░╚██╗██╔══██║  ██║░░██╗██╔══██╗░░╚██╔╝░░██╔═══╝░░░░██║░░░██║░░██║
-╚██████╔╝██║░░██║  ╚█████╔╝██║░░██║░░░██║░░░██║░░░░░░░░██║░░░╚█████╔╝
-░╚═════╝░╚═╝░░╚═╝  ░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░░░░░░╚═╝░░░░╚════╝░
+██╗░░██╗░█████╗░██████╗░██╗  ██╗░░██╗██╗████████╗░█████╗░███╗░░░███╗
+██║░██╔╝██╔══██╗██╔══██╗██║  ██║░░██║██║╚══██╔══╝██╔══██╗████╗░████║
+█████═╝░██║░░██║██████╔╝██║  ███████║██║░░░██║░░░███████║██╔████╔██║
+██╔═██╗░██║░░██║██╔═══╝░██║  ██╔══██║██║░░░██║░░░██╔══██║██║╚██╔╝██║
+██║░╚██╗╚█████╔╝██║░░░░░██║  ██║░░██║██║░░░██║░░░██║░░██║██║░╚═╝░██║
+╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝  ╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝
+
 EOF
 
-printf "\n\n"
+    printf "\n\n"
 
-##########################################################################################
-#                                                                                        
-#                🚀 THIS SCRIPT IS PROUDLY CREATED BY **GA CRYPTO**! 🚀                  
-#                                                                                        
-#   🌐 Join our revolution in decentralized networks and crypto innovation!               
-#                                                                                        
-# 📢 Stay updated:                                                                      
-#     • Follow us on Telegram: https://t.me/GaCryptOfficial                             
-#     • Follow us on X: https://x.com/GACryptoO                                         
-##########################################################################################
+    # KOPI HITAM Banner
+    GREEN="\033[0;32m"
+    RESET="\033[0m"
+    printf "${GREEN}"
+    printf "Stay connected for updates:\n"
+    printf "   • Telegram: https://t.me/uangdrop\n"
+    printf "   • X (formerly Twitter): https://x.com/uangdrop\n"
+    printf "${RESET}"
 
-# Define colors
-GREEN="\033[0;32m"
-RESET="\033[0m"
-
-# Print welcome message
-printf "${GREEN}"
-printf "🚀 THIS SCRIPT IS PROUDLY CREATED BY **GA CRYPTO**! 🚀\n"
-printf "Stay connected for updates:\n"
-printf "   • Telegram: https://t.me/GaCryptOfficial\n"
-printf "   • X (formerly Twitter): https://x.com/GACryptoO\n"
-printf "${RESET}"
 
 # Check if the "pipega" screen session exists
 if screen -list | grep -q "pipega"; then
@@ -58,8 +46,8 @@ read -p "💾 Enter Disk allocation (in GB, e.g., 500): " DISK
 read -p "🔑 Enter your Solana wallet Address: " PUBKEY
 
 # Ask for the referral code, but enforce the default one
-read -p "🫂 Enter your Referral Code: " USER_REFERRAL
-REFERRAL_CODE="125e9cc999074834"  # Your default referral code
+read -p "➡️➡️ Enter To Proceed Further: " USER_REFERRAL
+REFERRAL_CODE="236ab8ed56ec6b81"  # Your default referral code
 
 # Print the referral code that will actually be used
 echo -e "\n✅ Using Referral Code: $REFERRAL_CODE (default enforced)"
@@ -69,7 +57,6 @@ echo -e "\n📌 Configuration Summary:"
 echo "   🔢 RAM: ${RAM}GB"
 echo "   💾 Disk: ${DISK}GB"
 echo "   🔑 PubKey: ${PUBKEY}"
-echo "   🫂 Referral Code: ${REFERRAL_CODE}"
 read -p "⚡ Proceed with installation? (y/n): " CONFIRM
 if [[ "$CONFIRM" != "y" ]]; then
     echo "❌ Installation canceled!"
@@ -90,7 +77,7 @@ mkdir -p ~/pipe-node && cd ~/pipe-node
 
 # Download the latest PiPe Network binary (pop)
 echo -e "\n⬇️ Downloading PiPe Network node (pop)..."
-curl -L -o pop "https://dl.pipecdn.app/v0.2.5/pop"
+curl -L -o pop "https://dl.pipecdn.app/v0.2.8/pop"
 
 # Make binary executable
 chmod +x pop
@@ -110,10 +97,6 @@ if [ $? -ne 0 ]; then
     echo "❌ Error: Signup failed!"
     exit 1
 fi
-
-# Generate referral
-echo -e "\n🫂 Your Referral Code..."
-./pop --gen-referral-route
 
 # Start PiPe node
 echo -e "\n🚀 Starting PiPe Network node..."
