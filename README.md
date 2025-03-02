@@ -66,5 +66,13 @@ CTRL A+D
 
 ## You can also check your node via the pipe network web
 - https://dashboard.pipenetwork.com/node-lookup
-- ![image](https://github.com/user-attachments/assets/0bcc5750-e93c-4051-ad0c-d6d7e2bef0a9)
+  ![image](https://github.com/user-attachments/assets/0bcc5750-e93c-4051-ad0c-d6d7e2bef0a9)
+
+
+# Check [Here For Video Tutorials](https://t.me/uangdrop/37690)
+![image](https://github.com/user-attachments/assets/d244041f-4f84-43ef-a463-f39bf9e23eb7)
+
+
+
+
 
